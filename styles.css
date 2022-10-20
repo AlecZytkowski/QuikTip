@@ -1,0 +1,94 @@
+body {
+  background: radial-gradient(#70af19, #a4e549);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  color: white;
+  font-style: oblique;
+  font-size: 300%;
+  text-shadow: 0 0 3px black;
+}
+
+.enterBillAmount {
+  font-weight: bold;
+  font-size: 150%;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.inputBillAmount {
+  background-color: #ebf8d1;
+  border-radius: 6px;
+  border-color: #4e6d10;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  width: 50%;
+}
+
+.buttonHeaders {
+  font-weight: bold;
+  font-size: 120%;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.tipButton {
+  background-color: #548313;
+  background: radial-gradient(#5e8313, #6d9916);
+  width: 25%;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 150%;
+  border-radius: 8px;
+  border-style: groove;
+  border-color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #4e6d10;
+  background: #ebf8d1;
+}
+
+.totalHeaders {
+  font-weight: bold;
+  font-size: 125%;
+  color: white;
+  text-shadow: 0 0 6px black;
+}
+
+.tippedAmount {
+  background-color: #8dc51c;
+  color: black;
+  font-size: larger;
+  border: solid;
+  border-color: #4e6d10;
+  border-radius: 6px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.totalAmount {
+  background-color: #8dc51c;
+  color: black;
+  font-size: larger;
+  border: solid;
+  border-color: #4e6d10;
+  border-radius: 6px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.hidden {
+  visibility: hidden;
+  border: hidden;
+}

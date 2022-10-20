@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuikTip</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1 class="logo">QuikTip</h1>
+      <form class="enterBillAmount">
+        <label for="billAmount">Enter Bill Amount</label> <br />
+        <input
+          class="inputBillAmount"
+          type="number"
+          id="billAmountInput"
+          name="billAmountInput"
+        />
+      </form>
+    </div>
+    <h3 class="buttonHeaders">Then Select Preferred Tip Amount</h3>
+    <div>
+      <button
+        class="tipButton"
+        onclick="calculateTipPercent(.10); removeHidden()"
+        id="tenPercent"
+      >
+        10%
+      </button>
+      <button
+        class="tipButton"
+        onclick="calculateTipPercent(.15); removeHidden()"
+        id="fifteenPercent"
+      >
+        15%
+      </button>
+      <button
+        class="tipButton"
+        onclick="calculateTipPercent(.20); removeHidden()"
+        id="twentyPercent"
+      >
+        20%
+      </button>
+      <h3 class="buttonHeaders">
+        OR <br />
+        Select Preferred Cash Option
+      </h3>
+      <button
+        class="tipButton"
+        onclick="addCashTip(5); removeHidden()"
+        id="fiveDollars"
+      >
+        $5
+      </button>
+      <button
+        class="tipButton"
+        onclick="addCashTip(10); removeHidden()"
+        id="tenDollars"
+      >
+        $10
+      </button>
+      <button
+        class="tipButton"
+        onclick="addCashTip(20); removeHidden()"
+        id="twentyDollars"
+      >
+        $20
+      </button>
+    </div>
+    <div class="resultArea hidden" id="resultArea">
+      <h3 class="totalHeaders">Tipped Amount</h3>
+      <p class="tippedAmount" id="tippedAmount"></p>
+      <h3 class="totalHeaders">Total Amount</h3>
+      <p class="totalAmount" id="totalAmount"></p>
+    </div>
+  </body>
+  <script src="/scripts.js"></script>
+</html>
