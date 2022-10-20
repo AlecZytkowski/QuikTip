@@ -25,6 +25,8 @@ function removeHidden() {
   element.classList.remove("hidden");
 }
 
+
+//Unrefined Code (Repeating)
 /*
 const tipAmounts = {
   tenPercent: 0.1,
